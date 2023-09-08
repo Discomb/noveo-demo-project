@@ -6,10 +6,12 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
+import java.time.Duration;
+
 import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Configuration.baseUrl;
 import static com.codeborne.selenide.Selenide.*;
-import static com.codeborne.selenide.files.DownloadActions.click;
 import static io.qameta.allure.Allure.step;
 
 public class DevzionTests extends TestBase {
@@ -25,10 +27,8 @@ public class DevzionTests extends TestBase {
         step("Check for welcome text", () -> {
             $("#duplicate-preload-text").shouldHave(text("welcome to zion development"));
         });
-
-        ElementsCollection headers = $$("h2");
-
         step("Check for headers on the main page", () -> {
+            ElementsCollection headers = $$("h2");
             headers.findBy(text("what we do")).shouldHave(text("what we do"));
             headers.findBy(text("what we offer")).shouldHave(text("what we offer"));
             headers.findBy(text("who we partner with")).shouldHave(text("who we partner with"));
@@ -45,7 +45,8 @@ public class DevzionTests extends TestBase {
         step("Open the main page", () -> {
             open(baseUrl);
         });
-        step("Check links on the main page", () -> {});
+        step("Check links on the main page", () -> {
+        });
     }
 
     @Test
@@ -57,8 +58,8 @@ public class DevzionTests extends TestBase {
             $("#primary-menu").find(By.linkText("about us.")).click();
         });
         step("Check for welcome text", () -> {
-                $("#duplicate-preload-text").shouldHave(text("welcome to zion development"));
-            });
+            $("#duplicate-preload-text").shouldHave(text("welcome to zion development"));
+        });
     }
 
     @Test
@@ -66,23 +67,34 @@ public class DevzionTests extends TestBase {
         step("Open the main page", () -> {
             open(baseUrl);
         });
-        step("Click 'Careers' link", () -> {
+        step("Click 'careers' link", () -> {
             $("#primary-menu").find(By.linkText("careers.")).click();
         });
         step("Check contents", () -> {
-
+            ElementsCollection headers = $$("h2");
+            headers.findBy(text("why choose ZION")).shouldHave(text("why choose ZION"));
+            headers.findBy(text("job listings")).shouldHave(text("job listings"));
+            headers.findBy(text("tips for acing the interview")).shouldHave(text("tips for acing the interview"));
+            headers.findBy(text("relocate with us")).shouldHave(text("relocate with us"));
         });
     }
+
 
     @Test
     public void checkContactPageContent() {
         step("Open the main page", () -> {
             open(baseUrl);
         });
-        step("Open the main page", () -> {
-            open(baseUrl);
+        step("Click 'contacts' link", () -> {
+            $("#primary-menu").find(By.linkText("contacts.")).click();
         });
-        step("Check 'About' link", () -> {});
+        step("Check contents", () -> {
+            $(".kt-inside-inner-col p").shouldHave(text("Email: info@devzion.com\n" +
+                    "СЕО: Vitalii Zinovev\n" +
+                    "Georgia, Tbilisi, 37m Ilia Chavchavadze Avenue"));
+            switchTo().frame($("iframe[src^='https://www.google.com/maps/']"));
+            $("div.place-name").shouldBe(visible, Duration.ofSeconds(10)).shouldHave(text("37m Ilia Chavchavadze Avenue"));
+        });
     }
 
     @Test
@@ -90,7 +102,11 @@ public class DevzionTests extends TestBase {
         step("Open the main page", () -> {
             open(baseUrl);
         });
-
-        step("Check 'About' link", () -> {});
+        step("Click 'zionstories' link", () -> {
+            $("#primary-menu").find(By.linkText("#zionstories")).click();
+        });
+        step("Check header", () -> {
+            $(".stories__title").shouldHave(text("zion stories"));
+        });
     }
 }

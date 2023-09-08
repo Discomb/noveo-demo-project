@@ -79,7 +79,6 @@ public class DevzionTests extends TestBase {
         });
     }
 
-
     @Test
     public void checkContactPageContent() {
         step("Open the main page", () -> {

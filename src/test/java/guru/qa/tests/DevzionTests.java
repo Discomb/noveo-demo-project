@@ -2,7 +2,6 @@ package guru.qa.tests;
 
 import com.codeborne.selenide.ElementsCollection;
 import io.qameta.allure.Description;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;

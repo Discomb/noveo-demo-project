@@ -56,7 +56,7 @@ Tests will be launched remotely with <code>Selenoid</code>.
 
 To run the tests click <code>Build with parametes</code> and then click <code>Build</code>.
 <p align="center">
-<img title="Jenkins Build" src="media/screenshots/jenkins.png">
+<img title="Jenkins Build" src="media/screenshots/jenkins.PNG">
 </p>
 After build is complete, at <code>Builds history</code> you can find <code>Allure Report</code> and <code>Allure TestOps</code> icons, which allow you to see html-report and test documentation.
 
@@ -64,13 +64,13 @@ After build is complete, at <code>Builds history</code> you can find <code>Allur
 ### Overview
 
 <p align="center">
-<img title="Allure Overview" src="media/screenshots/allure_report.png">
+<img title="Allure Overview" src="media/screenshots/allure_report.PNG">
 </p>
 
 ### Test details
 
 <p align="center">
-<img title="Allure Details" src="media/screenshots/allure_details.png">
+<img title="Allure Details" src="media/screenshots/allure_details.PNG">
 </p>
 
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/telegram.svg"> Telegram notifications
@@ -86,5 +86,5 @@ After test run you can receive a notification to an email of messenger of choice
 To every report can be attached not only screenshots, but also videos of tests.
 
 <p align="center">
-  <img title="Selenoid Video" src="media/video/Video.gif">
+  <img title="Selenoid Video" src="media/video/video.gif">
 </p>

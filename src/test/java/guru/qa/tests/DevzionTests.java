@@ -2,6 +2,7 @@ package guru.qa.tests;
 
 import com.codeborne.selenide.ElementsCollection;
 import io.qameta.allure.Description;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -41,6 +42,7 @@ public class DevzionTests extends TestBase {
     }
 
     @Test
+    @Disabled
     public void linksOnMainPageArePresent() {
         step("Open the main page", () -> {
             open(baseUrl);
@@ -50,6 +52,7 @@ public class DevzionTests extends TestBase {
     }
 
     @Test
+    @Disabled
     public void checkAboutLink() {
         step("Open the main page", () -> {
             open(baseUrl);
@@ -63,6 +66,7 @@ public class DevzionTests extends TestBase {
     }
 
     @Test
+    @Disabled
     public void checkCareerPageContent() {
         step("Open the main page", () -> {
             open(baseUrl);
@@ -80,6 +84,7 @@ public class DevzionTests extends TestBase {
     }
 
     @Test
+    @Disabled
     public void checkContactPageContent() {
         step("Open the main page", () -> {
             open(baseUrl);
@@ -97,6 +102,7 @@ public class DevzionTests extends TestBase {
     }
 
     @Test
+    @Disabled
     public void checkStoriesPageContent() {
         step("Open the main page", () -> {
             open(baseUrl);

@@ -44,10 +44,37 @@ Results visualised with **Allure Report** and **Telegram Bot**.
 gradle clean test -DselenoidHome="selenoid.autotests.cloud" -DbrowserSize="1920х1080" -Dbrowser="chrome" -DbrowserVersion="100.0"
 ```
 
-Test will be launched remotely with Selenoid
+Tests will be launched remotely with **Selenoid**.
 
-## <img width="12%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"> How to run tests using Jenkins
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"> How to run tests using Jenkins
+
+Для запуска сборки необходимо перейти в раздел <code>Собрать с параметрами</code> и нажать кнопку <code>Собрать</code>.
+<p align="center">
+<img title="Jenkins Build" src="media/screens/jenkins.png">
+</p>
+После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
+
 ## Examples
-## <img width="12%" style="vertical-align:middle" title="Jenkins" src="media/logos/Allure_report.svg"> Allure reports
-## <img width="12%" style="vertical-align:middle" title="Jenkins" src="media/logos/telegram.svg"> Telegram notifications
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Allure_report.svg"> Allure report example
+### Overview
+
+<p align="center">
+<img title="Allure Overview" src="media/screens/allure.png">
+</p>
+
+
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/telegram.svg"> Telegram notifications
+
+After test run you can receive a notification to a chosen messenger or email. For example, Telegram.
+
+<p align="center">
+<img width="70%" title="Telegram Notifications" src="media/screens/Bot.png">
+</p>
+
 ## 🎥 Test video
+
+To every report can be attached not only screenshots, but also videos of tests.
+
+<p align="center">
+  <img title="Selenoid Video" src="media/video/Video.gif">
+</p>

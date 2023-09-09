@@ -4,8 +4,7 @@
 
 - [Technologies and tools](#gear-technologies-and-tools)
 - [Test cases](#heavy_check_mark-test-cases)
-- [How to run tests locally](#-How-to-run-tests-locally)
-- [Examples](#examples)
+- [How to run tests locally](#-How-to-run-tests-from-terminal)
 - [How to run tests using Jenkins](#-how-to-run-tests-using-jenkins)
 - [Allure reports](#-allure-reports)
 - [Telegram notifications](#-telegram-notifications)
@@ -25,9 +24,16 @@
 <a href="https://web.telegram.org/"><img src="media\logos\Telegram.svg" width="50" height="50" alt="Telegram" title="Telegram"></a>
 </p>
 
-Autotests written on **Java** using **Selenide** and **JUnit5** frameworks. Project builds from **IntelliJ Idea** with **Gradle**. Tests can be run from **Jenkins** on remote server with **Selenoid**.  
+Autotests written on <code>Java</code> using <code>Selenide</code> and <code>JUnit5</code> frameworks. Project builds from <code>IntelliJ Idea</code> with <code>Gradle</code>. Tests can be run from <code>Jenkins</code> on remote server with <code>Selenoid</code>.  
 
-Results visualised with **Allure Report** and **Telegram Bot**. 
+Results visualised with <code>Allure Report</code> and <code>Telegram Bot</code>.
+
+Allure report contains:
+- Test steps
+- Screenshot after last step
+- Page source
+- Browser console logs
+- Video of the test run
 
 ## ✔️ Test cases
 
@@ -44,17 +50,16 @@ Results visualised with **Allure Report** and **Telegram Bot**.
 gradle clean test -DselenoidHome="selenoid.autotests.cloud" -DbrowserSize="1920х1080" -Dbrowser="chrome" -DbrowserVersion="100.0"
 ```
 
-Tests will be launched remotely with **Selenoid**.
+Tests will be launched remotely with <code>Selenoid</code>.
 
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"> How to run tests using Jenkins
 
-Для запуска сборки необходимо перейти в раздел <code>Собрать с параметрами</code> и нажать кнопку <code>Собрать</code>.
+To run the tests click <code>Build with parametes</code> and then click <code>Build</code>.
 <p align="center">
-<img title="Jenkins Build" src="media/screens/jenkins.png">
+<img title="Jenkins Build" src="media/screenshots/jenkins.png">
 </p>
-После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
+After build is complete, at <code>Builds history</code> you can find <code>Allure Report</code> and <code>Allure TestOps</code> icons, which allow you to see html-report and test documentation.
 
-## Examples
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Allure_report.svg"> Allure report example
 ### Overview
 
@@ -62,10 +67,15 @@ Tests will be launched remotely with **Selenoid**.
 <img title="Allure Overview" src="media/screenshots/allure_report.png">
 </p>
 
+### Test details
+
+<p align="center">
+<img title="Allure Details" src="media/screenshots/allure_details.png">
+</p>
 
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/telegram.svg"> Telegram notifications
 
-After test run you can receive a notification to an email of messenger of choice. For example, Telegram.
+After test run you can receive a notification to an email of messenger of choice. For example, <code>Telegram</code>.
 
 <p align="center">
 <img width="70%" title="Telegram Notifications" src="media/screenshots/telegram.PNG">

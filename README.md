@@ -2,15 +2,15 @@
 
 ## 📖 Contents:
 
-- [Technologies and tools](#gear-technologies-and-tools)
-- [Test cases](#heavy_check_mark-test-cases)
-- [How to run tests locally](#-How-to-run-tests-from-terminal)
-- [How to run tests using Jenkins](#-how-to-run-tests-using-jenkins)
-- [Allure reports](#-allure-reports)
-- [Telegram notifications](#-telegram-notifications)
-- [Test video](#-test-video)
+- [Technologies and tools](#technologies-and-tools)
+- [Test cases](#test-cases)
+- [How to run tests locally](#how-to-run-tests-from-terminal)
+- [How to run tests using Jenkins](#how-to-run-tests-using-jenkins)
+- [Allure reports](#allure-reports-example)
+- [Telegram notifications](#telegram-notifications)
+- [Test video](#test-video)
 
-## ⚙ Technologies and tools
+## ⚙ <a name="tecnologies-and-tools"></a>Technologies and tools
 <p align="left">
 <a href="https://www.jetbrains.com/idea/"><img src="media/logos/Intelij_IDEA.svg" width="50" height="50"  alt="IDEA" title="IntelliJ IDEA"/></a>
 <a href="https://www.java.com/"><img src="media/logos/Java.svg" width="50" height="50" alt="Java" title="Java"/></a>
@@ -35,7 +35,7 @@ Allure report contains:
 - Browser console logs
 - Video of the test run
 
-## ✔️ Test cases
+## ✔️ <a name="test-cases"></a>Test cases
 
 - Checking headers on the main page
 - Checking links on the main page
@@ -44,7 +44,7 @@ Allure report contains:
 - Checking 'contact' link and page contents
 - Checking 'stories' link and page contents
 
-## 💻 How to run tests from terminal
+## 💻 <a name="how-to-run-tests-from-terminal"></a>How to run tests from terminal
 
 ```
 gradle clean test -DselenoidHome="selenoid.autotests.cloud" -DbrowserSize="1920х1080" -Dbrowser="chrome" -DbrowserVersion="100.0"
@@ -52,7 +52,7 @@ gradle clean test -DselenoidHome="selenoid.autotests.cloud" -DbrowserSize="1920�
 
 Tests will be launched remotely with <code>Selenoid</code>.
 
-## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"> How to run tests using Jenkins
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"><a name="how-to-run-tests-using-jenkins"></a> How to run tests using Jenkins
 
 To run the tests click <code>Build with parametes</code> and then click <code>Build</code>.
 <p align="center">
@@ -60,7 +60,7 @@ To run the tests click <code>Build with parametes</code> and then click <code>Bu
 </p>
 After build is complete, at <code>Builds history</code> you can find <code>Allure Report</code> and <code>Allure TestOps</code> icons, which allow you to see html-report and test documentation.
 
-## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Allure_report.svg"> Allure report example
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/Allure_Report.svg"><a name="allure-report-example"></a> Allure report example
 ### Overview
 
 <p align="center">
@@ -73,7 +73,7 @@ After build is complete, at <code>Builds history</code> you can find <code>Allur
 <img title="Allure Details" src="media/screenshots/allure_details.PNG">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/telegram.svg"> Telegram notifications
+## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logos/Telegram.svg"><a name="telegram-notifications"></a> Telegram notifications
 
 After test run you can receive a notification to an email of messenger of choice. For example, <code>Telegram</code>.
 
@@ -81,7 +81,7 @@ After test run you can receive a notification to an email of messenger of choice
 <img width="70%" title="Telegram Notifications" src="media/screenshots/telegram.PNG">
 </p>
 
-## 🎥 Test video
+## 🎥 <a name="test-video"></a>Test video
 
 To every report can be attached not only screenshots, but also videos of tests.
 

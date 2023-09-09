@@ -120,7 +120,7 @@ public class DevzionTests extends TestBase {
             $("#primary-menu").find(By.linkText("#zionstories")).click();
         });
         step("Check header", () -> {
-            $(".stories__title").shouldHave(text("zions stories"));
+            $(".stories__title").shouldHave(text("zion stories"));
         });
     }
 }

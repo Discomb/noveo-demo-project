@@ -42,12 +42,15 @@ public class DevzionTests extends TestBase {
     }
 
     @Test
-    @Disabled
     public void linksOnMainPageArePresent() {
         step("Open the main page", () -> {
             open(baseUrl);
         });
         step("Check links on the main page", () -> {
+            $("#primary-menu a[href='https://devzion.com/']").shouldHave(text("about us."));
+            $("#primary-menu a[href='https://devzion.com/careers/']").shouldHave(text("careers."));
+            $("#primary-menu a[href='https://devzion.com/contacts/']").shouldHave(text("contacts."));
+            $("#primary-menu a[href='https://devzion.com/zionstories/']").shouldHave(text("#zionstories"));
         });
     }
 
@@ -78,7 +81,7 @@ public class DevzionTests extends TestBase {
             ElementsCollection headers = $$("h2");
             headers.findBy(text("why choose ZION")).shouldHave(text("why choose ZION"));
             headers.findBy(text("job listings")).shouldHave(text("job listings"));
-            headers.findBy(text("tips for acing the interview")).shouldHave(text("tips for acing the interview"));
+            headers.findBy(text("tips for acinfg the interview")).shouldHave(text("tips for acing the interview"));
             headers.findBy(text("relocate with us")).shouldHave(text("relocate with us"));
         });
     }
@@ -94,7 +97,7 @@ public class DevzionTests extends TestBase {
         });
         step("Check contents", () -> {
             $(".kt-inside-inner-col p").shouldHave(text("Email: info@devzion.com\n" +
-                    "СЕО: Vitalii Zinovev\n" +
+                    "СЕО: Vitalii Zinovevv\n" +
                     "Georgia, Tbilisi, 37m Ilia Chavchavadze Avenue"));
             switchTo().frame($("iframe[src^='https://www.google.com/maps/']"));
             $("div.place-name").shouldBe(visible, Duration.ofSeconds(10)).shouldHave(text("37m Ilia Chavchavadze Avenue"));
@@ -111,7 +114,7 @@ public class DevzionTests extends TestBase {
             $("#primary-menu").find(By.linkText("#zionstories")).click();
         });
         step("Check header", () -> {
-            $(".stories__title").shouldHave(text("zion stories"));
+            $(".stories__title").shouldHave(text("zions stories"));
         });
     }
 }

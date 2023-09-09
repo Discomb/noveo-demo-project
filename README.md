@@ -1,4 +1,4 @@
-# Test project for <a href="https://devzion.com/">ZION Development</a> company
+# Demo project for <a href="https://devzion.com/">ZION Development</a> company
 
 ## 📖 Contents:
 

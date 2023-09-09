@@ -4,9 +4,9 @@
 
 - [Technologies and tools](#technologies-and-tools)
 - [Test cases](#test-cases)
-- [How to run tests locally](#how-to-run-tests-from-terminal)
+- [How to run tests from terminal](#how-to-run-tests-from-terminal)
 - [How to run tests using Jenkins](#how-to-run-tests-using-jenkins)
-- [Allure reports](#allure-reports-example)
+- [Allure reports](#allure-report-example)
 - [Telegram notifications](#telegram-notifications)
 - [Test video](#test-video)
 

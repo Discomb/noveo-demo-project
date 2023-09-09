@@ -52,7 +52,7 @@ gradle clean test -DselenoidHome="selenoid.autotests.cloud" -DbrowserSize="1920Ñ
 
 Tests will be launched remotely with <code>Selenoid</code>.
 
-## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"><a name="how-to-run-tests-using-jenkins"></a> How to run tests using Jenkins
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"><a name="how-to-run-tests-using-jenkins"></a> How to run tests using <a href='https://jenkins.autotests.cloud/job/C21-penderfynydd-unit15-TestProject/' title="Jenkins build">Jenkins</a>
 
 To run the tests click <code>Build with parametes</code> and then click <code>Build</code>.
 <p align="center">

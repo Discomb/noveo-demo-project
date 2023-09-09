@@ -85,7 +85,7 @@ public class DevzionTests extends TestBase {
             ElementsCollection headers = $$("h2");
             headers.findBy(text("why choose ZION")).shouldHave(text("why choose ZION"));
             headers.findBy(text("job listings")).shouldHave(text("job listings"));
-            headers.findBy(text("tips for acinfg the interview")).shouldHave(text("tips for acing the interview"));
+            headers.findBy(text("tips for acing the interview")).shouldHave(text("tips for acing the interview"));
             headers.findBy(text("relocate with us")).shouldHave(text("relocate with us"));
         });
     }

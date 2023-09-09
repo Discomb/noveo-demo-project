@@ -58,7 +58,7 @@ To run the tests click <code>Build with parametes</code> and then click <code>Bu
 <p align="center">
 <img title="Jenkins Build" src="media/screenshots/jenkins.PNG">
 </p>
-After build is complete, at <code>Builds history</code> you can find <code>Allure Report</code> and <code>Allure TestOps</code> icons, which allow you to see html-report and test documentation.
+After build is complete, at <code>Builds history</code> you can find <code>Allure Report</code> icon, click on which will allow you to see html-report of the test run.
 
 ## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/Allure_Report.svg"><a name="allure-report-example"></a> Allure report example
 ### Overview

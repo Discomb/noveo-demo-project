@@ -102,7 +102,7 @@ public class DevzionTests extends TestBase {
         });
         step("Check contents", () -> {
             $(".kt-inside-inner-col p").shouldHave(text("Email: info@devzion.com\n" +
-                    "СЕО: Vitalii Zinovevv\n" +
+                    "СЕО: Vitalii Zinovev\n" +
                     "Georgia, Tbilisi, 37m Ilia Chavchavadze Avenue"));
             switchTo().frame($("iframe[src^='https://www.google.com/maps/']"));
             $("div.place-name").shouldBe(visible, Duration.ofSeconds(10)).shouldHave(text("37m Ilia Chavchavadze Avenue"));

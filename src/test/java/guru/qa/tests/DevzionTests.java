@@ -91,8 +91,8 @@ public class DevzionTests extends TestBase {
     }
 
     @Test
-    @DisplayName("Check contents on the main page")
-    @Description("Check contents on the main page")
+    @DisplayName("Check contents on the contact page")
+    @Description("Check contents on the contact page")
     public void checkContactPageContent() {
         step("Open the main page", () -> {
             open(baseUrl);

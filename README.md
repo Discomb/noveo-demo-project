@@ -59,16 +59,16 @@ Tests will be launched remotely with **Selenoid**.
 ### Overview
 
 <p align="center">
-<img title="Allure Overview" src="media/screens/allure.png">
+<img title="Allure Overview" src="media/screenshots/allure_report.png">
 </p>
 
 
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/telegram.svg"> Telegram notifications
 
-After test run you can receive a notification to a chosen messenger or email. For example, Telegram.
+After test run you can receive a notification to an email of messenger of choice. For example, Telegram.
 
 <p align="center">
-<img width="70%" title="Telegram Notifications" src="media/screens/Bot.png">
+<img width="70%" title="Telegram Notifications" src="media/screenshots/telegram.PNG">
 </p>
 
 ## 🎥 Test video

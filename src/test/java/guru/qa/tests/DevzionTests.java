@@ -18,8 +18,8 @@ import static io.qameta.allure.Allure.step;
 public class DevzionTests extends TestBase {
 
     @Test
-    @DisplayName("Check for headers on the main page")
-    @Description("Check for headers on the main page")
+    @DisplayName("Check headers on the main page")
+    @Description("Check headers on the main page")
     public void contentHeadersOnMainPageArePresent() {
 
         step("Open the main page", () -> {
@@ -42,6 +42,8 @@ public class DevzionTests extends TestBase {
     }
 
     @Test
+    @DisplayName("Check links on the main page")
+    @Description("Check links on the main page")
     public void linksOnMainPageArePresent() {
         step("Open the main page", () -> {
             open(baseUrl);
@@ -55,7 +57,8 @@ public class DevzionTests extends TestBase {
     }
 
     @Test
-    @Disabled
+    @DisplayName("Check header after clicking on the 'about us' link")
+    @Description("Check header after clicking on the 'about us' link")
     public void checkAboutLink() {
         step("Open the main page", () -> {
             open(baseUrl);
@@ -69,7 +72,8 @@ public class DevzionTests extends TestBase {
     }
 
     @Test
-    @Disabled
+    @DisplayName("Check headers on the career page")
+    @Description("Check headers on the career page")
     public void checkCareerPageContent() {
         step("Open the main page", () -> {
             open(baseUrl);
@@ -87,7 +91,8 @@ public class DevzionTests extends TestBase {
     }
 
     @Test
-    @Disabled
+    @DisplayName("Check contents on the main page")
+    @Description("Check contents on the main page")
     public void checkContactPageContent() {
         step("Open the main page", () -> {
             open(baseUrl);
@@ -105,7 +110,8 @@ public class DevzionTests extends TestBase {
     }
 
     @Test
-    @Disabled
+    @DisplayName("Check header on stories page")
+    @Description("Check header on stories page")
     public void checkStoriesPageContent() {
         step("Open the main page", () -> {
             open(baseUrl);

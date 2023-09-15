@@ -78,7 +78,7 @@ After build is complete, at <code>Builds history</code> you can find <code>Allur
 ## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logos/Allure_TO.svg"><a name="allure-test-ops"></a> Integration with <a href='https://allure.autotests.cloud/project/3672/dashboards'>Allure TestOps</a>
 
 <p align="center">
-<img title="Allure TestOps" src="media/screenshots/Allure_TO.PNG">
+<img title="Allure TestOps" src="media/screenshots/allure_TO.PNG">
 </p>
 
 ## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logos/Jira.svg"><a name="jira"></a> Integration with <a href='https://allure.autotests.cloud/project/3672/dashboards'>Jira</a>

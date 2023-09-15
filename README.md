@@ -7,6 +7,8 @@
 - [How to run tests from terminal](#how-to-run-tests-from-terminal)
 - [How to run tests using Jenkins](#how-to-run-tests-using-jenkins)
 - [Allure reports](#allure-report-example)
+- [Integration with Allure TestOps](#allure-test-ops)
+- [Integration with Jira](#jira)
 - [Telegram notifications](#telegram-notifications)
 - [Test video](#test-video)
 
@@ -20,6 +22,7 @@
 <a href="https://selenide.org/"><img src="media/logos/Selenide.svg" width="50" height="50" alt="Selenide" title="Selenide"/></a>
 <a href="https://aerokube.com/selenoid/"><img src="media/logos/Selenoid.svg" width="50" height="50" alt="Selenoid" title="Selenoid"/></a>
 <a href="https://github.com/allure-framework/allure2"><img src="media/logos/Allure_Report.svg" width="50" height="50" alt="Allure" title="Allure"/></a>
+<a href="https://qameta.io/"><img src="media/logos/Allure_TO.svg" width="50" height="50" alt="Allure" title="Allure"/></a>
 <a href="https://www.jenkins.io/"><img src="media/logos/Jenkins.svg" width="50" height="50" alt="Jenkins" title="Jenkins"/></a>
 <a href="https://web.telegram.org/"><img src="media\logos\Telegram.svg" width="50" height="50" alt="Telegram" title="Telegram"></a>
 </p>
@@ -71,6 +74,19 @@ After build is complete, at <code>Builds history</code> you can find <code>Allur
 <p align="center">
 <img title="Allure Details" src="media/screenshots/allure_details.PNG">
 </p>
+
+## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logos/Allure_TO.svg"><a name="allure-test-ops"></a> Integration with <a href='https://allure.autotests.cloud/project/3672/dashboards'>Allure TestOps</a>
+
+<p align="center">
+<img title="Allure TestOps" src="media/screenshots/Allure_TO.PNG">
+</p>
+
+## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logos/Jira.svg"><a name="jira"></a> Integration with <a href='https://allure.autotests.cloud/project/3672/dashboards'>Jira</a>
+
+<p align="center">
+<img title="Jira" src="media/screenshots/jira.PNG">
+</p>
+
 
 ## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logos/Telegram.svg"><a name="telegram-notifications"></a> Telegram notifications
 

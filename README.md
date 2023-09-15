@@ -1,4 +1,4 @@
-# Demo project for <a href="https://devzion.com/">ZION Development</a> company
+# Demo project for <a href="https://xn--b1agwec.xn--p1ai/">Noveo</a> company
 
 ## 📖 Contents:
 
@@ -37,12 +37,11 @@ Allure report contains:
 
 ## ✔️ <a name="test-cases"></a>Test cases
 
-- Checking headers on the main page
-- Checking links on the main page
-- Checking 'about us' link and page contents
-- Checking 'careers' link and page contents
-- Checking 'contact' link and page contents
-- Checking 'stories' link and page contents
+- Check text on the main page
+- Check menu headers on the main page
+- Check headers on the About page
+- Check vacancies on the Careers page
+- Check the search
 
 ## 💻 <a name="how-to-run-tests-from-terminal"></a>How to run tests from terminal
 
@@ -52,7 +51,7 @@ gradle clean test -DselenoidHome="selenoid.autotests.cloud" -DbrowserSize="1920�
 
 Tests will be launched remotely with <code>Selenoid</code>.
 
-## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"><a name="how-to-run-tests-using-jenkins"></a> How to run tests using <a href='https://jenkins.autotests.cloud/job/C21-penderfynydd-unit15-TestProject/' title="Jenkins build">Jenkins</a>
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"><a name="how-to-run-tests-using-jenkins"></a> How to run tests using <a href='https://jenkins.autotests.cloud/job/C21-penderfynydd-unit15-TestProject/' title="Jenkins build">!!Jenkins!!</a>
 
 To run the tests click <code>Build with parametes</code> and then click <code>Build</code>.
 <p align="center">
@@ -60,7 +59,7 @@ To run the tests click <code>Build with parametes</code> and then click <code>Bu
 </p>
 After build is complete, at <code>Builds history</code> you can find <code>Allure Report</code> icon, click on which will allow you to see html-report of the test run.
 
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/Allure_Report.svg"><a name="allure-report-example"></a> Allure report example
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/Allure_Report.svg"><a name="allure-report-example"></a> Allure report example!!!
 ### Overview
 
 <p align="center">
@@ -73,7 +72,7 @@ After build is complete, at <code>Builds history</code> you can find <code>Allur
 <img title="Allure Details" src="media/screenshots/allure_details.PNG">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logos/Telegram.svg"><a name="telegram-notifications"></a> Telegram notifications
+## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logos/Telegram.svg"><a name="telegram-notifications"></a> Telegram notifications!!!
 
 After test run you can receive a notification to an email of messenger of choice. For example, <code>Telegram</code>.
 

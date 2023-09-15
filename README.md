@@ -51,7 +51,7 @@ gradle clean test -DselenoidHome="selenoid.autotests.cloud" -DbrowserSize="1920Ñ
 
 Tests will be launched remotely with <code>Selenoid</code>.
 
-## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"><a name="how-to-run-tests-using-jenkins"></a> How to run tests using <a href='https://jenkins.autotests.cloud/job/C21-penderfynydd-unit15-TestProject/' title="Jenkins build">!!Jenkins!!</a>
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logos/Jenkins.svg"><a name="how-to-run-tests-using-jenkins"></a> How to run tests using <a href='https://jenkins.autotests.cloud/job/C21-penderfynydd-unit15-TestProject/' title="Jenkins build">Jenkins</a>
 
 To run the tests click <code>Build with parametes</code> and then click <code>Build</code>.
 <p align="center">
@@ -59,7 +59,7 @@ To run the tests click <code>Build with parametes</code> and then click <code>Bu
 </p>
 After build is complete, at <code>Builds history</code> you can find <code>Allure Report</code> icon, click on which will allow you to see html-report of the test run.
 
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/Allure_Report.svg"><a name="allure-report-example"></a> Allure report example!!!
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/Allure_Report.svg"><a name="allure-report-example"></a> Allure report example
 ### Overview
 
 <p align="center">
@@ -72,7 +72,7 @@ After build is complete, at <code>Builds history</code> you can find <code>Allur
 <img title="Allure Details" src="media/screenshots/allure_details.PNG">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logos/Telegram.svg"><a name="telegram-notifications"></a> Telegram notifications!!!
+## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logos/Telegram.svg"><a name="telegram-notifications"></a> Telegram notifications
 
 After test run you can receive a notification to an email of messenger of choice. For example, <code>Telegram</code>.
 

@@ -20,12 +20,12 @@ public class TestBase {
         String selenoidHome = System.getProperty("selenoidHome", "selenoid.autotests.cloud");
         String selenoidCreds = System.getProperty("selenoidCreds", "user1:1234");
 
-        baseUrl = "https://devzion.com";
-        Configuration.browserSize = System.getProperty("browserSize");
-        Configuration.browser = System.getProperty("browser");
-        Configuration.browserVersion = System.getProperty("browserVersion");
-
-        Configuration.remote = "https://" + selenoidCreds + "@" + selenoidHome + "/wd/hub";
+        baseUrl = "https://xn--b1agwec.xn--p1ai/";
+        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
+        Configuration.browser = System.getProperty("browser", "chrome");
+//        Configuration.browserVersion = System.getProperty("browserVersion", "100");
+//
+//        Configuration.remote = "https://" + selenoidCreds + "@" + selenoidHome + "/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.of(

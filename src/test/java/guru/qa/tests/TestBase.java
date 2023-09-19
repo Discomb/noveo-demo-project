@@ -23,9 +23,9 @@ public class TestBase {
         baseUrl = "https://xn--b1agwec.xn--p1ai/";
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserVersion = System.getProperty("browserVersion", "100");
-
-        Configuration.remote = "https://" + selenoidCreds + "@" + selenoidHome + "/wd/hub";
+//        Configuration.browserVersion = System.getProperty("browserVersion", "100");
+//
+//        Configuration.remote = "https://" + selenoidCreds + "@" + selenoidHome + "/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.of(

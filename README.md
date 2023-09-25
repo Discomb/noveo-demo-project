@@ -62,7 +62,7 @@ To run the tests click <code>Build with parametes</code> and then click <code>Bu
 </p>
 After build is complete, at <code>Builds history</code> you can find <code>Allure Report</code> icon, click on which will allow you to see html-report of the test run.
 
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/Allure_Report.svg"><a name="allure-report-example"></a> Allure report example
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logos/Allure_Report.svg"><a name="allure-report-example"></a> <a href='https://jenkins.autotests.cloud/job/C21-penderfynydd-unit15-TestProject/10/allure/'>Allure</a> report example
 ### Overview
 
 <p align="center">
@@ -81,7 +81,7 @@ After build is complete, at <code>Builds history</code> you can find <code>Allur
 <img title="Allure TestOps" src="media/screenshots/Allure_TO.PNG">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logos/Jira.svg"><a name="jira"></a> Integration with <a href='https://allure.autotests.cloud/project/3672/dashboards'>Jira</a>
+## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logos/Jira.svg"><a name="jira"></a> Integration with <a href='https://jira.autotests.cloud/browse/HOMEWORK-886'>Jira</a>
 
 <p align="center">
 <img title="Jira" src="media/screenshots/jira.PNG">

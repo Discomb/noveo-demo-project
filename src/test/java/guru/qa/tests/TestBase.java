@@ -12,7 +12,7 @@ public class TestBase {
 
     @BeforeAll
     static void beforeAll() {
-        new WebDriverProvider().getDriver();
+        new WebDriverProvider().setupDriver();
     }
 
     @BeforeEach

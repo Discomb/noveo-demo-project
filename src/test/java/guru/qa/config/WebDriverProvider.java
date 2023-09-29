@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Configuration.baseUrl;
 
 public class WebDriverProvider {
 
-    public void getDriver() {
+    public void setupDriver() {
 
         WebConfig webConfig = ConfigFactory.create(WebConfig.class, System.getProperties());
 

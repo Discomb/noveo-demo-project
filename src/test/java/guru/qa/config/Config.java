@@ -1,11 +1,9 @@
 package guru.qa.config;
 
-import org.aeonbits.owner.Config;
-
-@Config.Sources({
-        "classpath:local.properties"
+@org.aeonbits.owner.Config.Sources({
+        "classpath:${env}.properties"
 })
-public interface WebConfig extends Config {
+public interface Config extends org.aeonbits.owner.Config {
 
     @Key("browser.name")
     String getBrowserName();
@@ -21,4 +19,12 @@ public interface WebConfig extends Config {
 
     @Key("browser.baseUrl")
     String getBaseUrl();
+
+    @Key("remote.url")
+    @DefaultValue("")
+    String getRemoteUrl();
+
+    @Key("remote.auth")
+    @DefaultValue("")
+    String getRemoteAuth();
 }

@@ -12,21 +12,19 @@ public class WebDriverProvider {
 
     public void setupDriver() {
 
-        WebConfig webConfig = ConfigFactory.create(WebConfig.class, System.getProperties());
+        Config config = ConfigFactory.create(Config.class, System.getProperties());
 
-        if (webConfig.isRemoteBrowser()) {
+        String selenoidHome = config.getRemoteUrl();
+        String selenoidCreds = config.getRemoteAuth();
 
-            RemoteConfig remoteConfig = ConfigFactory.create(RemoteConfig.class, System.getProperties());
-
-            String selenoidHome = remoteConfig.getRemoteUrl();
-            String selenoidCreds = remoteConfig.getRemoteAuth();
+        if (!(selenoidHome.isEmpty() || selenoidCreds.isEmpty())) {
             Configuration.remote = "https://" + selenoidCreds + "@" + selenoidHome + "/wd/hub";
         }
 
-        baseUrl = webConfig.getBaseUrl();
-        Configuration.browserSize = webConfig.getBrowserSize();
-        Configuration.browser = webConfig.getBrowserName();
-        Configuration.browserVersion = webConfig.getBrowserVersion();
+        baseUrl = config.getBaseUrl();
+        Configuration.browserSize = config.getBrowserSize();
+        Configuration.browser = config.getBrowserName();
+        Configuration.browserVersion = config.getBrowserVersion();
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.of(

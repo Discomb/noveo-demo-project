@@ -6,10 +6,10 @@ import static io.qameta.allure.Allure.step;
 
 public class CareersPage {
 
-    public CareersPage checkVacancies(String selector, String text) {
+    public CareersPage checkVacancies(String url, String text) {
 
         step("Checking vacancy: " + text, () -> {
-            $(selector).shouldHave(text(text));
+            $("section.vacancies-block a[href='" + url + "'] p.vacancies__name").shouldHave(text(text));
         });
 
         return this;

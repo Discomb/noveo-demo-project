@@ -21,10 +21,10 @@ public class CareersPageTests extends TestBase {
     @CsvFileSource(delimiter = ';', resources = "/currentVacancies.csv")
     @DisplayName("Check vacancies on the Careers page.")
     @Description("Checking current vacancies on the Careers page going from main page.")
-    public void checkVacanciesOnTheCareerPage(String url, String text) {
+    public void checkVacanciesOnTheCareerPage(String url, String vacancyName) {
         mainPage.openPage()
                 .goToCareersPage();
 
-        careersPage.checkVacancies(url, text);
+        careersPage.checkVacancies(url, vacancyName);
     }
 }
